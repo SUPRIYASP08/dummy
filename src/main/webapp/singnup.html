@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PentagonSpace Bank - Sign Up</title>
+  <style>
+    /* Background and font styling */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #004080, #00aaff);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    /* Card container */
+    .signup-box {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px 50px;
+      width: 350px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .signup-box h2 {
+      color: #ffd700;
+      margin-bottom: 25px;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    /* Input fields */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"] {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      font-size: 15px;
+    }
+
+    /* Submit button */
+    input[type="submit"] {
+      width: 95%;
+      padding: 12px;
+      margin-top: 15px;
+      background-color: #ffd700;
+      color: #003366;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #ffcc00;
+      transform: scale(1.05);
+    }
+
+    /* Title and footer */
+    .title {
+      position: absolute;
+      top: 30px;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      text-align: center;
+      font-size: 13px;
+      color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">🏦 PentagonSpace Bank</div>
+
+  <div class="signup-box">
+    <h2>Create Your Account</h2>
+    <form action="signup" method="post" >
+      <input type="text" name="name" placeholder="Full Name" required><br>
+      <input type="email" name="email" placeholder="Email Address" required><br>
+      <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" required><br>
+      <input type="password" name="password" placeholder="Create Password" required><br>
+      <input type="submit" value="Sign Up">
+    </form>
+  </div>
+
+  <footer>© 2025 PentagonSpace Bank | Secure Banking Experience</footer>
+</body>
+</html>

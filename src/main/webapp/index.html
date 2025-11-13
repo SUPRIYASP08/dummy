@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PentagonSpace Bank</title>
+  <style>
+    /* Page background and font setup */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #003366, #0099cc);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Container holding both forms */
+    .container {
+      display: flex;
+      gap: 30px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    /* Individual card design */
+    .card {
+      background-color: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      padding: 25px 30px;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #ffd700;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #ffd700;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #003366;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #ffcc00;
+    }
+
+    .title {
+      position: absolute;
+      top: 40px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      text-align: center;
+      width: 100%;
+      color: #e0e0e0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">🏦 PentagonSpace Bank</div>
+
+  <div class="container">
+    <!-- Login Form -->
+    <div class="card">
+      <h2>Login</h2>
+      <form action="login.html">
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="card">
+      <h2>Sign Up</h2>
+      <form action="signup.html">
+       	<button type="submit">Sign up</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>© 2025 PentagonSpace Bank | Secure. Smart. Simplified.</footer>
+</body>
+</html>
